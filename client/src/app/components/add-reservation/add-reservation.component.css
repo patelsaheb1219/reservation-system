@@ -1,0 +1,23 @@
+.form {
+  max-width: 600px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+h2 {
+  text-align: center;
+}
+
+.submit-button {
+  padding: 10px 20px;
+  background-color: #2076D2;
+  box-shadow: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.input-field {
+  width: 70%;
+}

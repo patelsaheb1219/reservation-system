@@ -1,0 +1,49 @@
+<div class="form">
+  <h1>Create Reservation</h1>
+
+  <form (ngSubmit)="onSubmit()">
+    <mat-form-field appearance="fill" class="input-field">
+      <mat-label>Room Type</mat-label>
+      <mat-select [(value)]="roomType" name="roomType" [(ngModel)]="roomType" required>
+        <mat-option value="single">Single</mat-option>
+        <mat-option value="double">Double</mat-option>
+      </mat-select>
+    </mat-form-field>
+    <br />
+    <mat-form-field class="input-field" appearance="fill">
+      <mat-label>From Date</mat-label>
+      <input matInput [matDatepicker]="fromPicker" name="fromDate" [(ngModel)]="fromDate" required>
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="fromPicker"></mat-datepicker-toggle>
+      <mat-datepicker #fromPicker></mat-datepicker>
+    </mat-form-field>
+    <br />
+    <br />
+    <mat-form-field class="input-field" appearance="fill">
+      <mat-label>To Date</mat-label>
+      <input matInput [matDatepicker]="toPicker" name="toDate" [(ngModel)]="toDate" required>
+      <mat-hint>MM/DD/YYYY</mat-hint>
+      <mat-datepicker-toggle matSuffix [for]="toPicker"></mat-datepicker-toggle>
+      <mat-datepicker #toPicker></mat-datepicker>
+    </mat-form-field>
+    <br />
+    <br />
+    <mat-label>Breakfast</mat-label>&nbsp;&nbsp;
+    <mat-radio-group aria-label="Breakfast" name="breakfast" [(ngModel)]="breakfast" required>
+      <mat-radio-button value="Yes">Yes</mat-radio-button>&nbsp;
+      <mat-radio-button value="No">No</mat-radio-button><br>
+    </mat-radio-group>
+
+    <br />
+    <div>
+      <div class="div">
+        <mat-checkbox name="air_conditioner" value="yes" [(ngModel)]="air_conditioner"> Air Conditioner</mat-checkbox>
+        &nbsp;&nbsp;
+        <mat-checkbox name="wakeup_service" value="yes" [(ngModel)]="wakeup_service">Wakeup Service</mat-checkbox>
+      </div>
+
+    </div>
+    <br />
+    <input type="submit" value="Submit" class="submit-button" />
+  </form>
+</div>

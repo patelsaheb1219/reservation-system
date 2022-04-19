@@ -1,0 +1,43 @@
+.header-container {
+  max-width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 80%;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+td,
+th {
+  border: 1px solid #dddddd;
+  text-align: center;
+  padding: 8px;
+}
+
+.edit-button {
+  padding: 10px 20px;
+  background-color: #2076D2;
+  box-shadow: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.delete-button {
+  padding: 10px 20px;
+  background-color: red;
+  box-shadow: none;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}

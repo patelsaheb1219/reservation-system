@@ -1,0 +1,14 @@
+.example-card {
+  max-width: 400px;
+}
+
+.info-container {
+  max-width: 400px;
+  margin-top: 30px; 
+  margin-left: auto; 
+  margin-right: auto;
+}
+
+h1 {
+  text-align: center;
+}
